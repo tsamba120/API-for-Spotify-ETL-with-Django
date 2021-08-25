@@ -10,3 +10,28 @@ class SongPlaysList(generics.ListAPIView):
     '''
     queryset = SongPlays.objects.all()
     serializer_class = SongPlays_Serializer
+
+
+class UniqueSongsList(generics.ListAPIView):
+    '''
+    API endpoint that provides a list of unique songs played
+    '''
+    queryset = DimSongs.objects.all()
+    serializer_class = DimSongs_Serializer
+
+
+class UniqueArtistsList(generics.ListAPIView):
+    '''
+    API endpoint that provides a list of unique artists listened to
+    '''
+    queryset = DimArtists.objects.all()
+    serializer_class = DimArtists_Serializer
+
+
+class UniqueAlbumsList(generics.ListAPIView):
+    '''
+    API endpoint that provides a list of unique albums listened to
+    '''
+    queryset = DimAlbums.objects.all()
+    serializer_class = DimAlbums_Serializer
+ 
