@@ -1,2 +1,4 @@
 */config.py
 *spotify_django_api.code-workspace
+song_listens/migrations/__pycache__/
+*__pycache__*
